@@ -213,7 +213,10 @@ dependencies = [
 name = "network"
 version = "0.1.0"
 dependencies = [
+ "bincode",
  "futures",
+ "serde",
+ "serde_derive",
  "serialization",
  "tokio",
 ]

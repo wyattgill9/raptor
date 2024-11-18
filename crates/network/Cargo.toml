@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1", features = ["full"] }
-serialization = { path = "../serialization" }  
-futures = "0.3"
+tokio = { version = "1", features = ["full"] }  # Ensure you are using Tokio for async
+bincode = "1.3"  # For zero-copy serialization
+futures = "0.3"  # For handling async tasks (joins, etc.)
+serde = { version = "1.0", features = ["derive"] }  # Optional if using Serde-based serialization
+serde_derive = "1.0"  # Optional for Serde-based serialization
+serialization = { path = "../serialization" }
