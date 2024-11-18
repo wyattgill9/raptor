@@ -19,8 +19,6 @@ Raptor is a high-performance, custom messaging protocol designed for extreme sca
 
 ## Custom Serialization Techniques
 1. [ ] **Efficient Binary Serialization**: Optimized for smaller message sizes and faster processing.
-2. [ ] **Extensible Message Formats**: Supports both fixed and variable-length data structures.
-3. [ ] **Schema Evolution Support**: Easily adapts to changing message structures without compatibility issues.
 
 ## Scalability Enhancements
 1. [ ] **Seamless Horizontal Scaling**: Nodes can be added to handle increased traffic without causing downtime.
