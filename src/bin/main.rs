@@ -1,8 +1,7 @@
+use std::error::Error;
+use network::udp_server;  
+
 #[tokio::main]
-async fn main() -> std::io::Result<()> {
-    match network::udp_server::run_udp_server().await {
-        Ok(_) => println!("UDP Server started successfully"),
-        Err(e) => eprintln!("Error starting UDP server: {}", e),
-    }
-    Ok(())
+async fn main() -> Result<(), Box<dyn Error>> {
+    udp_server::start_server().await
 }
