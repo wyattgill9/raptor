@@ -6,12 +6,10 @@ edition = "2021"
 [workspace]
 members = [
     "crates/network",
-    "crates/core",
     "crates/serialization"
 ]
 
 [dependencies]
 serialization = { path = "crates/serialization" }
 network = { path = "crates/network" }
-core = { path = "crates/core" }
 tokio = { version = "1", features = ["full"] }
